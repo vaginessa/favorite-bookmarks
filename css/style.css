@@ -1,0 +1,121 @@
+body {
+  background: url('../img/book.png') no-repeat center center fixed;
+  background-color: lemonchiffon;
+  background-size: cover;
+  padding: 40px;
+}
+
+h1 {
+  font-family: 'Gravitas One', serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.bookmarkCounter {
+  text-align: center;
+}
+
+.bookmarkCounter article {
+  display: inline-block;
+  width: 200px;
+}
+
+.bookmarkCounter h4 {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 25px;
+}
+
+#user-input {
+  text-align: center;
+}
+
+.read {
+  background-color: mistyrose;
+}
+
+input[type=text] {
+ background-color: aquamarine;
+ cursor: pointer;
+}
+
+input[type=submit], input[type=button] {
+ cursor: pointer;
+}
+
+.read-button, .remove-button {
+  margin-right: 5px;
+}
+​
+​#bookmarks {
+  list-style: none;
+}
+
+#bookmarks li {
+ border-radius: 20px;
+ font-family: 'Roboto', sans-serif;
+ padding: 15px;
+}
+
+ .bookmarkInfo {
+ background-color: beige;
+ border-radius: 5px;
+ display: flex;
+ margin: 5px 0;
+ padding: 0;
+ width: 600px;
+}
+
+.bookmarkInfo div {
+  padding-top: 10px;
+}
+
+#bookmarks {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 760px) {
+  h1 {
+    font-size: 2em;
+  }
+  .bookmarkCounter article {
+    width: 100px;
+  }
+  .bookmarkInfo {
+    margin-top: 5px 0;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  p {
+    line-height: 1.5em;
+    padding: 10px;
+  }
+  .bookmarkCounter article {
+    width: 90px;
+  }
+  input[type=text] {
+    border-radius: 5px;
+    font-size: 1em;
+    height: 50px;
+    margin: 3px;
+    width: 90%;
+  }
+  input[type=submit] {
+    padding: 10px 0;
+    margin-top: 10px;
+    width: 20%;
+  }
+  input[type=button] {
+    margin-top: 10px;
+    width: 50%;
+  }
+}

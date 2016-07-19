@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Linked List</title>
+  <link href="https://fonts.googleapis.com/css?family=Gravitas+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css" media="screen" title="styles" charset="utf-8">
+  <link rel="stylesheet" href="css/style.css" media="screen" title="styles" charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+</head>
+  <body>
+    <h1>Save Your Favorite Websites</h1>
+      <p>
+        Bookmark your favorite websites by entering its name &amp; URL address!
+      </p>
+    <form id="user-input">
+      <input type="text" id="bookmark-title" placeholder="title" onkeyup="toggleSubmitButton()">
+      <input type="text" id="url" placeholder="insert url" onkeyup="toggleSubmitButton()">
+      <input type="submit" id="submit" disabled>
+      <input type="button" id="clearReadBookmarks" value="Clear Read Bookmarks" disabled>
+    </form>
+    <section class="bookmarkCounter">
+      <article>
+        <h4>Total Bookmarks</h4>
+        <p id="bookmark-tally">0</p>
+      </article>
+      <article>
+        <h4>Read Bookmarks</h4>
+        <p id="read-tally">0</p>
+      </article>
+      <article>
+        <h4>Unread Bookmarks</h4>
+        <p id="unread-tally">0</p>
+      </article>
+    </section>
+    <section id="bookmarks">
+    </section>
+
+    <script src="scripts/jquery.js" charset="utf-8"></script>
+    <script src="scripts/script.js" charset="utf-8"></script>
+  </body>
+</html>
