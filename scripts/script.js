@@ -44,7 +44,7 @@ function generateBookmark(title, url) {
               '</li>' +
             '</ul>' +
           '</article>'
-        )
+        );
   }
   clearInputFields();
   bookmarkCount ++;
@@ -55,20 +55,20 @@ function generateBookmark(title, url) {
 //enables submit button when valid input is entered
 function toggleSubmitButton() {
   if ($bookmarkTitleInput.val() !== '' && $bookmarkUrlInput.val() !== '') {
-    $($submitBookmark).prop('disabled', false)
+    $($submitBookmark).prop('disabled', false);
   }
   else {
-    $($submitBookmark).prop('disabled', true)
-  };
+    $($submitBookmark).prop('disabled', true);
+  }
 }
 
 //Add class "read" to bookmarks and counts them
 $bookmarkList.on('click', '.read-button', function() {
   $(this).toggleClass('read');
     if (($('.read').length) > 0) {
-      $('#clearReadBookmarks').prop('disabled', false)
+      $('#clearReadBookmarks').prop('disabled', false);
     } else {
-      $('#clearReadBookmarks').prop('disabled', true)
+      $('#clearReadBookmarks').prop('disabled', true);
     }
   readBookmarks();
   unreadBookmarks();
@@ -81,11 +81,11 @@ $bookmarkList.on('click', '.remove-button', function() {
   totalBookmarks();
   readBookmarks();
   unreadBookmarks();
-})
+});
 
 //Clears bookmarks that have "mark as read" selected
 $clearReadBookmarks.on('click', function() {
-  read = $('.read').length
+  read = $('.read').length;
   $('.read').parent().parent().parent().parent().remove();
   bookmarkCount = bookmarkCount - read;
   readBookmarks();
